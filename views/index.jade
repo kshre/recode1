@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1.
+		Express + Mongo + Node
+	p.
+		Express.js app that enters user data into MongoDB and pulls it back up to show all data stored: 
+	ul
+		li
+			a(href="/newuser")= "Add new user"
+		li
+			a(href="/userlist")= "View registered users"  
+				
+
