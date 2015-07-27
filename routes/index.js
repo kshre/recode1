@@ -28,8 +28,8 @@ router.post('/adduser', function(req, res, next) {
   var useremail = req.body.useremail;
 
   collection.insert( { "username" : username, "email" : useremail }, function(err, docs) {
-    if(err) { res.send("There was a problem adding information to the database")}
-    else { res.redirect("userlist")}
+    if(err) { res.send("There was a problem adding information to the database"); }
+    else { res.redirect("userlist"); }
   });  
 });
 
