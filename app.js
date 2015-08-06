@@ -11,7 +11,7 @@ var users = require('./routes/users');
 // database object setup
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/noderest1');
+var db = monk('localhost:27017/recode1');
 
 var app = express();
 
