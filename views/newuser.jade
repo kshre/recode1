@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  form#formAddUser(method="post", action="/adduser", name="adduser")
+    input#inputAddUsername(name="username", placeholder="username", type="text")
+    input#inputAddUseremail(name="useremail", placeholder="email", type="text")
+    button#btnSubmit(type="submit") Add user 

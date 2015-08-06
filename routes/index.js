@@ -15,4 +15,9 @@ router.get('/userlist', function( req, res, next ) {
   });
 });
 
+/* GET newuser page */
+router.get('/newuser', function(req, res, next) {
+  res.render('newuser', { title: "Add new user"});
+});
+
 module.exports = router;
